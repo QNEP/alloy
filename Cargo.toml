@@ -70,28 +70,28 @@ alloy-transport-ipc = { version = "0.13", path = "crates/transport-ipc", default
 alloy-transport-ws = { version = "0.13", path = "crates/transport-ws", default-features = false }
 alloy-eip5792 = { version = "0.13", path = "crates/eip5792", default-features = false }
 
-alloy-core = { version = "0.8.22", default-features = false }
-alloy-dyn-abi = { version = "0.8.22", default-features = false }
-alloy-json-abi = { version = "0.8.22", default-features = false }
-alloy-primitives = { version = "0.8.22", default-features = false }
-alloy-sol-types = { version = "0.8.22", default-features = false }
+alloy-core = { version = "1.0.0", default-features = false }
+alloy-dyn-abi = { version = "1.0.0", default-features = false }
+alloy-json-abi = { version = "1.0.0", default-features = false }
+alloy-primitives = { version = "1.0.0", default-features = false }
+alloy-sol-types = { version = "1.0.0", default-features = false }
 
 alloy-rlp = { version = "0.3.9", default-features = false }
-alloy-trie = { version = "0.7.6", default-features = false }
+alloy-trie = { git = "https://github.com/alloy-rs/trie.git", rev = "e4e7a8c97604996ed9c315be16cad5f0b92e0378", default-features = false }
 
-alloy-chains = { version = "0.1.18", default-features = false }
+alloy-chains = { git = "https://github.com/alloy-rs/chains.git", rev = "a50d991dbff5dd635e107bb46d2cc9ec77fe88e8", default-features = false }
 
 # eips
-alloy-eip2124 = { version = "0.1.0", default-features = false }
-alloy-eip2930 = { version = "0.1.0", default-features = false }
-alloy-eip7702 = { version = "0.5.1", default-features = false }
+alloy-eip2124 = { git = "https://github.com/alloy-rs/eips.git", rev = "f77f998ee1682c0d0df240302e93ee205defa244", default-features = false }
+alloy-eip2930 = { git = "https://github.com/alloy-rs/eips.git", rev = "f77f998ee1682c0d0df240302e93ee205defa244", default-features = false }
+alloy-eip7702 = { git = "https://github.com/alloy-rs/eips.git", rev = "f77f998ee1682c0d0df240302e93ee205defa244", default-features = false }
 
 # hardforks
 alloy-hardforks = "0.1.0"
 
 # ethereum
-ethereum_ssz_derive = "0.8"
-ethereum_ssz = "0.8"
+ethereum_ssz_derive = { git = "https://github.com/yash-atreya/ethereum_ssz.git", rev = "452700eda998ba2b3194625e479b15162b56e14f" }
+ethereum_ssz = { git = "https://github.com/yash-atreya/ethereum_ssz.git", rev = "452700eda998ba2b3194625e479b15162b56e14f" }
 tree_hash = "0.9.1"
 tree_hash_derive = "0.9.1"
 
@@ -172,10 +172,3 @@ serial_test = "3.0"
 similar-asserts = "1.5"
 tempfile = "3.10"
 tower-http = "0.6.1"
-
-[patch.crates-io]
-alloy-core = { git = "https://github.com/alloy-rs/core.git", rev = "378dcfd" }
-alloy-dyn-abi = { git = "https://github.com/alloy-rs/core.git", rev = "378dcfd" }
-alloy-json-abi = { git = "https://github.com/alloy-rs/core.git", rev = "378dcfd" }
-alloy-primitives = { git = "https://github.com/alloy-rs/core.git", rev = "378dcfd" }
-alloy-sol-types = { git = "https://github.com/alloy-rs/core.git", rev = "378dcfd" }
